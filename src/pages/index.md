@@ -1,17 +1,15 @@
 ---
 templateKey: index-page
-title: Connecting People with Nature
-image: /img/chuttersnap-ifmqouokaoa-unsplash.jpg
-heading: Connecting People with Nature*
-subheading: "*A Gatsby v3 starter template set up with Netlify CMS and Tailwind CSS."
+title: Steel Made - High Quality Installations
+image: /img/alum-facade-01.jpg
+heading: Giapoutzis Efthimis
+subheading: "High Quality Aluminium Door and Window Installations."
 about:
   heading: Who we are
-  description: "Our team of architects, gardeners and enginners is working with
-    clients all over the world to transform urban spaces with the best nature
-    provides."
+  description: "Our team of expert advisors are standing by to assist you with all your aluminium installation and stainless steel balustrade needs. With over 16 years of experience between us, your home and office building needs are in the best hands!"
   image:
     image: /img/leon-tho1_oukbg0-unsplash.jpg
-    alt: people working in agency
+    alt: people working in company
   button:
     url: /about
     label: Find out more

@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { Logo } from "./Logo"
 
 const Footer = () => {
   return (
@@ -9,21 +9,7 @@ const Footer = () => {
         <div className="lg:flex">
           <div className="w-full -mx-4 sm:-mx-6 lg:-mx-8 lg:w-2/5">
             <div className="px-4 sm:px-6 lg:px-8">
-              <Link className="flex items-center gap-1" to="/">
-                <StaticImage
-                  src="../img/urbangarden-icon.png"
-                  alt="UrbanGarden icon"
-                  layout="fixed"
-                  width={40}
-                  height={40}
-                  backgroundColor="transparent"
-                  placeholder="blurred"
-                />
-                <div className="text-xl font-bold tracking-wide">
-                  <span className="text-gray-800 font-semibold">Urban</span>
-                  <span className="text-green-700">Garden</span>
-                </div>
-              </Link>
+              <Logo />
 
               <p className="max-w-md mt-2 text-gray-600 dark:text-gray-400">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.

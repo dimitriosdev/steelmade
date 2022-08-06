@@ -1,9 +1,9 @@
 const siteUrl =
-  process.env.URL || `https://objective-thompson-fe2703.netlify.app`
+  process.env.URL || `https://steelmade.netlify.app`
 
 module.exports = {
   siteMetadata: {
-    title: "UrbanGarden",
+    title: "steel made",
     description:
       "Transforming and enriching our urban environments with green living spaces",
     siteUrl: "https://objective-thompson-fe2703.netlify.app",
@@ -72,13 +72,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `UrbanGarden`,
-        short_name: `UrbanGarden`,
+        name: `SteelMade`,
+        short_name: `SteelMade`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#047857`,
+        theme_color: `#232020`,
         display: `standalone`,
-        icon: `src/img/urbangarden-icon.png`,
+        icon: `src/img/steelmade-icon.png`,
       },
     },
     "gatsby-transformer-remark-frontmatter",

@@ -4,6 +4,7 @@ import { SectionHeading, TextImageSplit } from "../components/Sections"
 import { PrimaryButton, SecondaryButton } from "../components/Buttons"
 import { Container, CardSet } from "../components/Sections"
 import Image from "../components/Image"
+import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPageTemplate = ({
   heading,
@@ -15,11 +16,11 @@ const IndexPageTemplate = ({
   return (
     <div>
       {/* Header */}
-      <div className="relative bg-green-700 overflow-hidden">
+      <div className="relative bg-steel overflow-hidden">
         <div className="max-w-7xl mx-auto">
-          <div className="relative z-10 pt-24 pb-12 bg-green-700 sm:pt-28 sm:pb-14 md:pt-32 md:pb-16 lg:w-1/2 lg:pt-44 lg:pb-24 xl:pt-48 xl:pb-32">
+          <div className="relative z-10 pt-24 pb-12 sm:pt-28 sm:pb-14 md:pt-32 md:pb-16 lg:w-1/2 lg:pt-44 lg:pb-24 xl:pt-48 xl:pb-32">
             <svg
-              className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-green-700 transform translate-x-1/2"
+              className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-steel transform translate-x-1/2"
               fill="currentColor"
               viewBox="0 0 100 100"
               preserveAspectRatio="none"
@@ -29,11 +30,22 @@ const IndexPageTemplate = ({
             </svg>
 
             <div className="relative z-20 mx-auto lg:max-w-7xl px-4 sm:px-6 lg:px-8">
-              <div className="text-center max-w-md mx-auto lg:max-w-lg lg:mx-0 lg:text-left">
-                <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+              <div className="flex justify-center">
+                <StaticImage
+                  src="../img/steelmade-icon-text.png"
+                  alt="Steel Made icon"
+                  className="w-1/3 sm:w-1/5 md:w-2/12 lg:w-1/5 xl:w-1/4 2xl:w-1/4"
+                  layout="constrained"
+                  loading="eager"
+                  backgroundColor="transparent"
+                  placeholder="blurred"
+                />
+              </div>
+              <div className="text-center max-w-md mx-auto lg:max-w-lg lg:mx-0 ">
+                <h1 className="font-semiblack text-3xl text-grey-100">
                   {heading}
                 </h1>
-                <p className="mt-2 text-green-100 sm:mt-4 lg:mt-6 lg:text-xl">
+                <p className="text-grey-50 mt-2 sm:mt-4 lg:mt-6 lg:text-xl">
                   {subheading}
                 </p>
                 <PrimaryButton to="/contact" className="mt-6 lg:mt-10">
@@ -56,14 +68,18 @@ const IndexPageTemplate = ({
       {/* Featured projects */}
       <Container>
         <div className="flex justify-between items-baseline">
-          <SectionHeading>Our projects from all over the world</SectionHeading>
-          <Link className="text-green-700 underline hover:text-green-800" to="/projects">
-            View all
-          </Link>
+          <SectionHeading>Our projects</SectionHeading>
+
         </div>
         <div className="mt-8">
           <CardSet posts={posts} />
         </div>
+        <div className="text-center">
+          <Link className="text-grey-700 underline hover:text-grey-800" to="/projects">
+            View all
+          </Link>
+        </div>
+
       </Container>
 
       {/* About section */}

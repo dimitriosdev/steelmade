@@ -4,7 +4,7 @@ title: About
 heading: About us
 subheading: Our values, mission and culture
 team:
-  - name: Courtney Henry
+  - name: Efthimis Giapoutzis
     image: /img/joanna-nix-walkup-p7zgmc33s0u-unsplash.jpg
     title: Founder / CEO
   - name: Michael Foster

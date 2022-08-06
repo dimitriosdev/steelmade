@@ -8,6 +8,12 @@ module.exports = {
       colors: {
         green: colors.emerald,
         lime: colors.lime,
+        grey: colors.gray,
+        'steel': {
+          light: '#67e8f9',
+          DEFAULT: '#232020',
+          dark: '#0e7490',
+        },
       },
       spacing: {
         '1/2': '50%',
